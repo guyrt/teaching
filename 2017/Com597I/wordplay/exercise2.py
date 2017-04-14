@@ -12,7 +12,7 @@ for word in scrabble.wordlist:
     if word[0] == 'q':
         # If the current q word is longer than the longest q word we've seen so far, then
         # save it as the longest word.
-        if len(word) > len(longest_word_so_far):
+        if len(word) >= len(longest_word_so_far):
             longest_word_so_far = word
             print("New longest word: " + longest_word_so_far)
 
